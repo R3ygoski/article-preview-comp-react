@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Github](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/article-preview-made-with-react-and-scss-TX9jgwcBMt)
+- Live Site URL: [Github](https://r3ygoski.github.io/article-preview-comp-react/)
 
 ## My process
 
