@@ -1,0 +1,29 @@
+@use './sass/var';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var.$mainFont;
+  font-weight: 500;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var.$lightGrayishBlue;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  a { 
+    color: #3e52a3; 
+  }
+}

@@ -1,0 +1,102 @@
+@use '../../sass/var';
+
+.profile__social_media {
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem 1.8rem;
+    border-radius: 0 0 1rem 1rem;
+    &__avatar {
+        border-radius: 100rem;
+        width: 12.5%;
+    }
+    &__name, &__post_date {
+        margin-left: 1rem;
+    }
+    &__name {
+        color: var.$veryDarkGrayishBlue;
+        font-weight: 700;
+    }
+    &__post_date {
+        color: var.$grayishBlue;
+    }
+    &__share {
+        cursor: pointer;
+        text-align: center;
+        background: var.$lightGrayishBlue;
+        margin-left: auto;
+        width: 36px;
+        height: 36px;
+        border-radius: 100rem;
+        z-index: 2;
+        &-icon {
+            color: var.$desaturatedDarkBlue;
+            margin-top: 9px;
+        }
+    }
+    &__share--opened {
+        @extend .profile__share;
+        background: var.$desaturatedDarkBlue;
+        .profile__share-icon--opened {
+            color: var.$lightGrayishBlue;
+            margin-top: 9px;
+        }
+    }
+}
+
+.social_media {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 1rem;
+    background: var.$veryDarkGrayishBlue;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 1rem 1rem;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right: 7rem;
+    &__share {
+        letter-spacing: .3rem;
+        text-transform: uppercase;
+        color: var.$grayishBlue;
+        margin-right: 1rem;
+    }
+    &__icon {
+        font-size: 1.5rem;
+        color: var.$white;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1440px){
+    .social_media {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: .5rem;
+        width: 60%;
+        height: 75%;
+        top: -70%;
+        right: -18.5%;
+        &__share {
+            font-size: .85rem;
+            margin-right: 1rem;
+        }
+        &::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            bottom: -10%;
+            left: 50%;
+            transform: rotate(-45deg);
+            background: var.$veryDarkGrayishBlue;
+        }
+    }
+}
